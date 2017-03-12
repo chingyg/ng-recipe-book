@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header.component';
+import { RecipesComponent, RecipeListComponent } from './recipes';
+import { ShoppingListComponent, ShoppingListService } from './shopping-list';
+import { RecipeService } from './recipes';
 
 @Component({
   selector: 'rb-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  providers:[RecipeService, ShoppingListService]
 })
 export class AppComponent {
-  title = 'rb works!';
+    
+
+
 }

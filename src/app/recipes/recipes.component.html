@@ -1,0 +1,14 @@
+<div class="row">
+	<!-- Hold list of recipes -->
+	<div class="col-md-5">
+		<rb-recipe-list (recipeSelected)="selectedRecipe = $event">
+			
+		</rb-recipe-list>
+	</div>
+	<!-- Loaded/Focused Recipe -->
+	<div class="col-md-7">
+		<rb-recipe-detail [selectedRecipe]="selectedRecipe">
+			
+		</rb-recipe-detail>
+	</div>
+</div>
